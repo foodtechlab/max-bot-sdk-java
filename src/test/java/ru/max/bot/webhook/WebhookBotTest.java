@@ -83,8 +83,8 @@ public class WebhookBotTest {
             byte[] bytes2 = serializer.serialize(update2);
             String url = "http://0.0.0.0:12345/testbot";
             String url2 = "http://0.0.0.0:12345/testbot2";
-            responses.add(httpClient.post(url, bytes));
-            responses2.add(httpClient.post(url2, bytes2));
+            responses.add(httpClient.post(url, "", bytes));
+            responses2.add(httpClient.post(url2, "", bytes2));
             sentUpdates.add(update);
             sentUpdates2.add(update2);
         }
